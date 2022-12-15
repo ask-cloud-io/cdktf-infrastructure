@@ -7,6 +7,7 @@ export default [
         vpcId: "vpcid-dev",
         dbSubnetGroupName: "dbSubnetGroupName-dev",
         allowedCidrBlocks: ["10.10.0.0/16"],
-        region: region.US_EAST_1
+        region: region.US_EAST_1,
+        instanceClass: "db.t3.medium"
     } as RdsAuroraStackOptions
   ]

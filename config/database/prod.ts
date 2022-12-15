@@ -6,7 +6,8 @@ export default [
         ...defaultConfig,
         name: "db-core",
         vpcId: "vpcid-prod",
-        dbSubnetGroupName: "dbSubnetGroupName-dev",
+        dbSubnetGroupName: "dbSubnetGroupName-prod",
+        instanceClass: "db.r5.24xlarge",
         allowedCidrBlocks: ["10.12.0.0/16"],
         region: region.US_EAST_1
     } as RdsAuroraStackOptions,

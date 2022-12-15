@@ -129,6 +129,7 @@ The dev database should be small and production database should be xlarge. With 
    {   
         ...defaultConfig,
         vpcId: "vpcid-dev",
+        instanceClass: "db.t3.medium",
         dbSubnetGroupName: "dbSubnetGroupName-dev",
         allowedCidrBlocks: ["10.10.0.0/16"],
         region: region.US_EAST_1
@@ -141,7 +142,8 @@ The dev database should be small and production database should be xlarge. With 
         ...defaultConfig,
         name: "db-core",
         vpcId: "vpcid-prod",
-        dbSubnetGroupName: "dbSubnetGroupName-dev",
+        dbSubnetGroupName: "dbSubnetGroupName-prod",
+        instanceClass: "db.r5.24xlarge",
         allowedCidrBlocks: ["10.12.0.0/16"],
         region: region.US_EAST_1
     } as RdsAuroraStackOptions,

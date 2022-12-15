@@ -6,7 +6,7 @@ const cidrPrefix = "10.10"
 export default [
     {   
         ...defaultConfig,
-        name: "dev-sanbox",
+        name: "dev-sandbox",
         tags: {
             ...defaultConfig.tags,
             Environment: "dev"

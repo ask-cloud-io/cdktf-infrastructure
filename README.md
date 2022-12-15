@@ -30,7 +30,7 @@ Using this IAC-framework, its as simple as providing the appropriate variables i
 ```typescript
    {   
         ...defaultConfig,
-        name: "dev-sanbox",
+        name: "dev-sandbox",
         tags: {
             ...defaultConfig.tags,
             Environment: "dev"

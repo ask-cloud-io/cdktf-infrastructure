@@ -9,7 +9,7 @@ Terraform is great for managing simple to meduim size infrastructure, but it can
 Terraform uses a declarative approach, which means that it defines the desired state of infrastructure and then automatically determines the necessary steps to reach that state. This can make it difficult to understand the sequence of events that will occur when applying changes, which can be challenging in complex environments thus making it difficult to manage large, complex infrastructure.
 
 ## better days...
-Terraform CDK is here! It is an open-source toolkit for defining cloud infrastructure as code, to define cloud infrastructure in a safe and predictable way, using a familiar programming language such as TypeScript, JavaScript, Python, C#, and Java.
+Terraform CDK is here! It is an open-source toolkit for defining cloud infrastructure as code, in a safe and predictable way, using a familiar programming language such as TypeScript, JavaScript, Python, C#, and Java.
 
 It offers several benefits over traditional infrastructure management methods. One of the main benefits is that it allows developers to use the same tools and processes they use for application development to manage and deploy their infrastructure. This makes it easier for teams to collaborate and ensures that infrastructure is treated like any other code, with version control, testing, and continuous integration and deployment.
 

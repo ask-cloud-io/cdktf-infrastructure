@@ -9,6 +9,11 @@
       "name": "vpc",
       "source": "terraform-aws-modules/vpc/aws",
       "version": "~> 3.0"
+    },
+    {
+      "name": "rds-aurora",
+      "source": "terraform-aws-modules/rds-aurora/aws",
+      "version": "~> 7.0"
     }
   ],
   "context": {

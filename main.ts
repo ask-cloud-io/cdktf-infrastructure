@@ -1,16 +1,31 @@
 // Copyright (c) HashiCorp, Inc
 // SPDX-License-Identifier: MPL-2.0
 import { Construct } from "constructs";
-import { App, TerraformStack } from "cdktf";
+import { App } from "cdktf";
 
-class MyStack extends TerraformStack {
-  constructor(scope: Construct, id: string) {
-    super(scope, id);
+import { VpcStack } from "./src/stacks/vpc";
 
-    // define resources here
-  }
+const getServiceStacksConfigs = (service: string, env: any) => {
+  const configs = require(`./config/${service}/${env}`)
+  console.log(configs)
+  return configs
+}
+
+const createStacks = (app: Construct, env: string = "dev") => {
+
+  let stacks: any = [];
+
+  const vpcStackConfigs = getServiceStacksConfigs("vpc", env)
+
+
+  vpcStackConfigs.default.forEach((config: any) => {
+    stacks.push(new VpcStack(app, config.name))
+  });
+
+  return stacks
 }
 
 const app = new App();
-new MyStack(app, "appcues-infrastructure");
+createStacks(app, process.env.INFRA_ENV)
+
 app.synth();

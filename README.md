@@ -1,5 +1,3 @@
-# CHECK BACK FOR A COMPLETE PICTURE WILL BE READY BY DEC 15TH EOD
-
 # Infrastructure as code (IAC) is now a first class citizen in the development eco-system
 by Ernest Aaron
 ## a look back...

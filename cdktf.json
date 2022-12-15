@@ -4,7 +4,13 @@
   "projectId": "5858d54b-7e8e-41dd-b5f2-a173eec88611",
   "sendCrashReports": "false",
   "terraformProviders": [],
-  "terraformModules": [],
+  "terraformModules": [
+    {
+      "name": "vpc",
+      "source": "terraform-aws-modules/vpc/aws",
+      "version": "~> 3.0"
+    }
+  ],
   "context": {
     "excludeStackIdFromLogicalIds": "true",
     "allowSepCharsInLogicalIds": "true"

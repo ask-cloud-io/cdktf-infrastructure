@@ -2,7 +2,7 @@
 by Ernest Aaron
 ## a look back...
 When most organization think infrastructure as code, they think Terraform.
-Terraform is great for managing simple to meduim size infrastructure, but it can be difficult to manage large, complex infrastructure; think multiple accounts, multiple regions, multiple resources, and testing all that infrastructure...
+Terraform is great for managing simple to medium size infrastructure, but it can be difficult to manage large, complex infrastructure; think multiple accounts, multiple regions, multiple resources, and testing all that infrastructure...
 
 Terraform uses a declarative approach, which means that it defines the desired state of infrastructure and then automatically determines the necessary steps to reach that state. This can make it difficult to understand the sequence of events that will occur when applying changes, which can be challenging in complex environments thus making it difficult to manage large, complex infrastructure.
 
@@ -11,13 +11,13 @@ Terraform CDK is here! It is an open-source toolkit for defining cloud infrastru
 
 It offers several benefits over traditional infrastructure management methods. One of the main benefits is that it allows developers to use the same tools and processes they use for application development to manage and deploy their infrastructure. This makes it easier for teams to collaborate and ensures that infrastructure is treated like any other code, with version control, testing, continuous integration and deployment.
 
-The goal of this demo application is to show whats possible with a high level of abstraction. It makes it easy to manage complex infrastructure without having to write/ worry about the underlying low-level code. This can save time and reduce the potential for errors, allowing us to move to some of the infrastructure management left.
+The goal of this demo application is to show what's possible with a high level of abstraction. It makes it easy to manage complex infrastructure without having to write/ worry about the underlying low-level code. This can save time and reduce the potential for errors, allowing us to move to some of the infrastructure management left.
 
 Overall, this new approach offers a flexible and powerful way to manage cloud infrastructure using code and familiar programming languages. It can help organizations improve the reliability, scalability, and agility of their infrastructure.
 
 ### Use Cases
 
-> The goal is to build an infrastructure framework that is highly abstracted, so  provising everyday resources, is seamless, yet easy to debug issues or add enhancments.
+> The goal is to build an infrastructure framework that is highly abstracted, so  providing everyday resources, is seamless, yet easy to debug issues or add enhancements.
 
 #### Use Case 1 
 Cloud Engineer needs to create new vpcs across dev and prod accounts.
